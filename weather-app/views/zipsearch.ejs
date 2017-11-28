@@ -26,11 +26,28 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                       <li class="nav-item active">
-                          <a class="nav-link" href="zipsearch.ejs">Search by Zipcode <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                       </li>
                   </ul>
               </div>
           </nav>
       </header>
+    <div class="container">
+        <div class = "jumbotron" style="background-color: #ffa879; margin-top: 50px;">
+          <fieldset>
+            <form action="/" method="post">
+              <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+              <input type="submit" class="ghost-button" value="Get Weather">
+            </form>
+            <% if(weather !== null){ %>
+              <p><%= weather %></p>
+            <% } %>
+
+            <% if(error !== null){ %>
+              <p><%= error %></p>
+            <% } %>
+          </fieldset>
+        </div>
+    </div>
   </body>
 </html>
