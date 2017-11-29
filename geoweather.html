@@ -1,0 +1,48 @@
+<style>
+    table {
+        width:50%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+    table#t01 tr:nth-child(even) {
+        background-color: #eee;
+    }
+    table#t01 tr:nth-child(odd) {
+       background-color:#fff;
+    }
+    table#t01 th {
+        background-color: black;
+        color: white;
+    }
+    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Weather App</title>
+            <link rel="stylesheet" href = "style.css">
+            <link rel="stylesheet" href="weather.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="scripts.js"></script>
+        </head>
+        <body>
+            <div id="forecast">
+                <h1 class="location">Weather at <span id="location"> </span></h1>
+                <div id ="imgdiv">
+                    <img id="img" src=""/>
+                </div>
+            <p>It is currently <span id="temp"> </span> degrees Fahrenheit</p>
+            <p>Wind: <span id="wind"> </span></p>
+            
+            
+            </div>	
+        </body>
+        
+    </html>

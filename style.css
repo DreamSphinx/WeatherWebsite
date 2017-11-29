@@ -1,0 +1,7 @@
+body{
+	background: gray;
+	color: white;
+}
+.navbar-default {
+    background-color: cyan !important;
+}
