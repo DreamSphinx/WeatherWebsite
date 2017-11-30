@@ -1,6 +1,6 @@
 <style>
     table {
-        width:50%;
+        width:75%;
     }
     table, th, td {
         border: 1px solid black;
@@ -10,6 +10,8 @@
         padding: 5px;
         text-align: left;
     }
+
+    
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,35 +37,45 @@
                 </div>
             </div>
         </nav>
-        <div class = "container" style = "margin-top: 100px">
-            <div class = "jumbotron" style="background-color: rgb(148, 147, 147);">
+        <div class = "container" style = "margin-top: 25px">
+            <div class = "jumbotron" style="background-color: white;">
                 <div id="forecast">
                     <h1 class="location">Weather at <span id="location"> </span></h1>
                     <div id ="imgdiv">
                         <img id="img" src=""/>
                     </div>
-                    <p>It is currently <span id="temp"> </span> degrees Fahrenheit</p>
+                    <p><h2>It is currently <span id="temp"> </span> degrees Fahrenheit</h2></p>
                     <p>Wind: <span id="wind"> </span></p>
-                    <p><strong>Three Day Forecast</strong></p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th><span id="dayOne"> </span></th>
-                                <th><span id="dayTwo"> </span></th>
-                                <th><span id="dayThree"> </span></th>
+                    <p>Alerts:<font color="red"><span id="warning"> </span></font></p>
+                    <p><center><h2><strong>Seven Day Forecast</strong></h2></center></p>
+                    <center>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><span id="dayOne"> </span></th>
+                                    <th><span id="dayTwo"> </span></th>
+                                    <th><span id="dayThree"> </span></th>
+                                    <th><span id="dayFour"> </span></th>
+                                    <th><span id="dayFive"> </span></th>
+                                    <th><span id="daySix"> </span></th>
+                                    <th><span id="daySeven"> </span></th>
+                                    
+                                </tr>
                                 
-                            </tr>
-                            
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span id="dataOne"> </span> <br><img id="imgOne" src=""/></td>
-                                <td><span id="dataTwo"> </span> <br><img id="imgTwo" src=""/></td>
-                                <td><span id="dataThree"> </span> <br><img id="imgThree" src=""/></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span id="dataOne"> </span> <br><img id="imgOne" src=""/></td>
+                                    <td><span id="dataTwo"> </span> <br><img id="imgTwo" src=""/></td>
+                                    <td><span id="dataThree"> </span> <br><img id="imgThree" src=""/></td>
+                                    <td><span id="dataFour"> </span> <br><img id="imgFour" src=""/></td>
+                                    <td><span id="dataFive"> </span> <br><img id="imgFive" src=""/></td>
+                                    <td><span id="dataSix"> </span> <br><img id="imgSix" src=""/></td>
+                                    <td><span id="dataSeven"> </span> <br><img id="imgSeven" src=""/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
                 </div>
             </div>	
         </div>
